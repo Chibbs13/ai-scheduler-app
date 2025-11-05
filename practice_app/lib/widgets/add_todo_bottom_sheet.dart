@@ -147,7 +147,7 @@ class _AddTodoBottomSheetState extends State<AddTodoBottomSheet> {
               crossAxisAlignment: CrossAxisAlignment.stretch,
               children: [
                 Text(
-                  widget.todo == null ? 'Add Todo' : 'Edit Todo',
+                  widget.todo == null ? 'Add Task' : 'Edit Task',
                   style: theme.textTheme.titleLarge,
                 ),
                 const SizedBox(height: 16),
@@ -274,7 +274,7 @@ class _AddTodoBottomSheetState extends State<AddTodoBottomSheet> {
                 const SizedBox(height: 16),
                 ElevatedButton(
                   onPressed: _submit,
-                  child: const Text('Add Todo'),
+                  child: Text(widget.todo == null ? 'Add Task' : 'Update Task'),
                 ),
               ],
             ),
